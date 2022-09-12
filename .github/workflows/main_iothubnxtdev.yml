@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v1
         with:
-          java-version: '8'
+          java-version: '11'
 
       - name: Build with Maven
         run: mvn clean install
@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'iothubnxtdev'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_23AF0EEC354C450AA3CC54AD79B83F51 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2AFA9E63988C4E62BE6799CC8745619C }}
           package: '*.jar'
